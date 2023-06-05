@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&family=Raleway:wght@400;700&display=swap");
+
+@import "./reset";
+@import "./variables";
+@import "./utilities";
+
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./hero";
+@import "./features";
+@import "./productive";
+@import "./testimonials";
+@import "./newsletter";
+
+body {
+  background: $intro-email-bg;
+}

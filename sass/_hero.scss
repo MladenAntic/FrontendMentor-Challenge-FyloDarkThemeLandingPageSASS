@@ -1,0 +1,92 @@
+#hero {
+  text-align: center;
+  position: relative;
+
+  .hero__illustration {
+    display: inline-block;
+    margin-bottom: 1.875rem;
+
+    @media screen and (max-width: 62rem) {
+      width: 80%;
+      margin: 0 auto 1.875rem;
+    }
+
+    @media screen and (max-width: 48rem) {
+      width: 80%;
+      margin: 0 auto 1.875rem;
+    }
+  }
+
+  .hero__title,
+  .hero__description,
+  .hero__cta {
+    color: $white;
+  }
+
+  .hero__title {
+    font-size: 2.5rem;
+
+    @media screen and (max-width: 62rem) {
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width: 48rem) {
+      font-size: 2rem;
+      width: 80%;
+      margin: 0 auto;
+
+      br {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 36rem) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .hero__description {
+    width: 35%;
+    margin: 1.875rem auto;
+    line-height: 1.5;
+
+    @media screen and (max-width: 62rem) {
+      width: 80%;
+    }
+
+    @media screen and (max-width: 48rem) {
+      width: 80%;
+    }
+
+    @media screen and (max-width: 36rem) {
+       font-size: 0.875rem;
+      }
+  }
+
+  .hero__cta {
+    display: inline-block;
+    background: linear-gradient(
+      to right,
+      hsl(176, 68%, 64%),
+      hsl(198, 60%, 50%)
+    );
+    padding: 0.9375rem 4.6875rem;
+    border-radius: 3.125rem;
+
+    &:hover {
+      background: linear-gradient(
+        to right,
+        hsl(176, 68%, 85%),
+        hsl(198, 60%, 75%)
+      );
+    }
+  }
+
+  .hero__curved {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+}

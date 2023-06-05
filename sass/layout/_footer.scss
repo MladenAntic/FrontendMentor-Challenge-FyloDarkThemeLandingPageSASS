@@ -1,0 +1,147 @@
+#footer {
+  background: $footer-bg;
+  padding: 18.75rem 6.25rem 6.25rem;
+
+  @media screen and (min-width: 62rem) and (max-width: 75rem) {
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+  }
+
+  @media screen and (max-width: 36rem) {
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+  }
+
+  .footer__logo {
+    display: inline-block;
+    margin-bottom: 1.875rem;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: $white;
+
+    @media screen and (max-width: 62rem) {
+      flex-direction: column;
+      gap: 3.125rem;
+    }
+
+    .footer__info {
+      width: 35%;
+      position: relative;
+      padding-left: 1.875rem;
+
+      @media screen and (max-width: 62rem) {
+        width: 90%;
+      }
+
+      .footer__para {
+        line-height: 1.5;
+
+        @media screen and (max-width: 75rem) {
+          font-size: 0.75rem;
+        }
+
+        @media screen and (max-width: 36rem) {
+          font-size: 0.75rem;
+        }
+
+        .footer__locationIcon {
+          position: absolute;
+          left: 1%;
+        }
+      }
+    }
+
+    .footer__contact {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 1.25rem;
+
+      li {
+        @media screen and (max-width: 75rem) {
+          font-size: 0.75rem;
+        }
+
+        img {
+          display: inline-block;
+          margin-right: 0.9375rem;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    .footer__links {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+
+      li {
+        display: inline-block;
+        text-align: left;
+        font-size: 0;
+        text-transform: uppercase;
+        position: relative;
+
+        a {
+          display: inline-block;
+          color: $white;
+          font-size: 1rem;
+
+          @media screen and (max-width: 75rem) {
+            font-size: 0.75rem;
+          }
+
+          &:hover {
+            font-weight: 700;
+          }
+
+          &::before {
+            display: block;
+            content: attr(title);
+            font-weight: bold;
+            height: 0;
+            overflow: hidden;
+            visibility: hidden;
+          }
+        }
+      }
+    }
+
+    .footer__social {
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+
+      a {
+        display: inline-block;
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 0.0625rem solid $white;
+        border-radius: 50%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s ease-in-out;
+
+        i {
+          color: $white;
+        }
+
+        &:hover {
+          border: 0.0625rem solid hsl(176, 68%, 64%);
+
+          i {
+            color: hsl(176, 68%, 64%);
+            transition: 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
